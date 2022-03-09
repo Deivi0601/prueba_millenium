@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  width: 100%;
+  margin: 0;
+}
+
+body.loading .loader {
+  overflow: hidden;
+  display: block;
+}
+
+.loader {
+  background: rgba(255, 255, 255, 0.8) url("../assets/loading/loading.gif") 50%
+    50% no-repeat;
+  position: fixed;
+  display: none;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.loader::after {
+  content: "Cargando...";
+  position: fixed;
+  font-size: 1.6rem;
+  left: 47%;
+  top: 60%;
+}
+
+.primary-content {
+  padding: 2rem;
+  display: flex;
+}
+
+.primary-card {
+  background-color: #fff;
+  border-radius: 0.33rem;
+  padding: 2rem;
+}
+
+.container-form {
+  width: 38%;
+}
+
+.primary-form-field {
+  border: 1px solid #d1d1d1;
+  padding: 0.447rem 0.5rem;
+  border-radius: 0.33rem;
+  margin-bottom: 1rem;
+  display: block;
+  width: 80%;
+}
+
+.primary-input {
+  padding: 0.262rem 0.5rem;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.primary-button {
+  border-radius: 0.33rem;
+  background: #f04700;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  color: #fff;
+  border: none;
+  width: 80%;
+}
+
+.container-users {
+  margin-left: 2rem;
+  width: 60%;
+}
+
+.primary-table {
+  width: 100%;
+}
+
+.primary-table thead th {
+  padding: 0.5rem 0rem;
+}
+
+.primary-table tbody td {
+  padding: 1rem 0rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.primary-table tbody tr:nth-child(odd) {
+  background-color: #d1d1d1bd;
+}
+
+.primary-table tbody tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
